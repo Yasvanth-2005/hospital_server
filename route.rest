@@ -1,0 +1,52 @@
+### Register a new doctor ###
+POST http://localhost:3002/auth/register
+Content-Type: application/json
+
+{  
+  "doctorName": "siddhu",
+  "phoneNumber": "134567899",
+  "email": "codewi.com",
+  "password": "your_password",
+  "specifications": "Crdiologist"
+}
+
+### Login as a doctor ###
+POST http://localhost:3002/auth/login
+Content-Type: application/json
+
+{
+  "doctorId": "DOC0019",
+  "password": "your_password"
+}
+
+###GET Doctor details ###
+GET http://localhost:3002/doctor/DOC0019
+
+
+
+###POST ###
+### Add a new patient ###
+POST http://localhost:3002/patients
+Content-Type: application/json
+
+{
+
+  "patientName": "ihdf",
+  "age": 30,
+  "gender": "Male",
+  "blood": "O+"
+}
+
+### Get patient by ID ###
+GET http://localhost:3002/patients/P8447
+
+### Add a new prescription to a patient ###
+POST http://localhost:3002/patients/P8447/prescriptions
+Content-Type: application/json
+
+{
+  "doctorName": "siddhu",
+  "problem": "Prescription for a specific problem",
+  "description": "Prescription details",
+  "medicine": "Medicine details"
+}

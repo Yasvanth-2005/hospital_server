@@ -1,0 +1,28 @@
+{
+  "name": "muzamil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.2.0",
+    "mongoose": "^8.0.0",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
